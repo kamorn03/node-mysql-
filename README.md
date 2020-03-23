@@ -16,4 +16,13 @@ INSERT INTO employees (id, name, location) VALUES
 (3, 'Jade', 'Germany'),
 (4, 'Lesley', 'Scotland');
 
+# change connection config in app.js
+
+const db = mysql.createConnection ({
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    database: 'company'
+});
+
 # npm install
